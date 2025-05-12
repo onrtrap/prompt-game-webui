@@ -25,7 +25,7 @@ public class PromptDto {
     //The text of the prompt. Used solely in game.
 
     private String text;
-    
+
 
     public PromptDto(long id, String topic, String activity, int intensity, String text) {
         this.id = id;
