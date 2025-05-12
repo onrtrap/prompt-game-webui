@@ -38,19 +38,15 @@ public class Prompt {
     @Column(name = "text")
     private String text;
 
-    @Column(name = "isSafe")
-    private boolean isSafe;
-
     public Prompt(){
 
     }
-    public Prompt(long id, String topic, String activity, int intensity, String text, boolean isSafe) {
+    public Prompt(long id, String topic, String activity, int intensity, String text) {
         this.id = id;
         this.topic = topic;
         this.activity = activity;
         this.intensity = intensity;
         this.text = text;
-        this.isSafe = isSafe;
     }
 
     public Long getId() {
@@ -91,13 +87,5 @@ public class Prompt {
 
     public void setText(String text) {
         this.text = text;
-    }
-
-    public boolean isSafe() {
-        return isSafe;
-    }
-
-    public void setSafe(boolean safe) {
-        isSafe = safe;
     }
 }

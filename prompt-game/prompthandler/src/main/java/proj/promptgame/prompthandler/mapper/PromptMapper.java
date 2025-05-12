@@ -11,8 +11,7 @@ public class PromptMapper {
               prompt.getTopic(),
               prompt.getActivity(),
               prompt.getIntensity(),
-              prompt.getText(),
-              prompt.isSafe());
+              prompt.getText());
     }
 
     public static Prompt mapToPrompt(PromptDto promptDto){
@@ -21,7 +20,6 @@ public class PromptMapper {
                 prompt.setActivity(promptDto.getActivity());
                 prompt.setIntensity(promptDto.getIntensity());
                 prompt.setText(promptDto.getText());
-                prompt.setSafe(promptDto.isSafe());
                 return prompt;
     }
 }

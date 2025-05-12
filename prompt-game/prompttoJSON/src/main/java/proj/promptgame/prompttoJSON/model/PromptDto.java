@@ -22,15 +22,12 @@ public class PromptDto {
 
     private String text;
 
-    private boolean isSafe;
-
-    public PromptDto(long id, String topic, String activity, int intensity, String text, boolean isSafe) {
+    public PromptDto(long id, String topic, String activity, int intensity, String text) {
         this.id = id;
         this.topic = topic;
         this.activity = activity;
         this.intensity = intensity;
         this.text = text;
-        this.isSafe = isSafe;
     }
 
     public Long getId() {
@@ -71,14 +68,6 @@ public class PromptDto {
 
     public void setText(String text) {
         this.text = text;
-    }
-
-    public boolean isSafe() {
-        return isSafe;
-    }
-
-    public void setSafe(boolean safe) {
-        isSafe = safe;
     }
 }
 

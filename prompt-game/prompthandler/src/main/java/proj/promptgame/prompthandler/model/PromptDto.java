@@ -25,16 +25,14 @@ public class PromptDto {
     //The text of the prompt. Used solely in game.
 
     private String text;
+    
 
-    private boolean isSafe;
-
-    public PromptDto(long id, String topic, String activity, int intensity, String text, boolean isSafe) {
+    public PromptDto(long id, String topic, String activity, int intensity, String text) {
         this.id = id;
         this.topic = topic;
         this.activity = activity;
         this.intensity = intensity;
         this.text = text;
-        this.isSafe = isSafe;
     }
 
 
@@ -79,11 +77,5 @@ public class PromptDto {
         this.text = text;
     }
 
-    public boolean isSafe() {
-        return isSafe;
-    }
 
-    public void setSafe(boolean safe) {
-        isSafe = safe;
-    }
 }
