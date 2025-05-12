@@ -1,0 +1,17 @@
+eureka:
+  instance:
+    hostname: {hostname}
+  client:
+    service-url:
+      defaultZone: {defaultZone}
+
+server:
+  port: 8090
+  spring:
+    application:
+      name: prompt-to-json
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0

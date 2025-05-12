@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: prompt-to-json
+  config:
+    import: optional:configserver:http://localhost:8888

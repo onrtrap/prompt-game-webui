@@ -1,0 +1,27 @@
+eureka:
+  client:
+    register-with-eureka: true
+server:
+  port: 8222
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: web-receiver
+          uri: {Url}
+          predicates:
+            - Path=/api/webcall/**
+        - id: prompt-to-json
+          uri: {Url}
+          predicates:
+            - Path=/api/data/**
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0

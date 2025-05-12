@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: prompt-handler
+  config:
+    import: optional:configserver:http://localhost:8888

@@ -1,0 +1,19 @@
+eureka:
+  instance:
+    hostname: {hostname}
+  client:
+    service-url:
+      defaultZone: {defaultZone}
+
+server:
+  port: 8070
+  spring:
+    profiles:
+      active: default
+    application:
+      name: web-receiver
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
