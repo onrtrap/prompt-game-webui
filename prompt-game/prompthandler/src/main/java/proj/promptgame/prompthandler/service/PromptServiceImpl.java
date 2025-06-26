@@ -54,7 +54,6 @@ public class PromptServiceImpl implements PromptService {
         existingPrompt.setActivity(promptDto.getActivity());
         existingPrompt.setIntensity(promptDto.getIntensity());
         existingPrompt.setText(promptDto.getText());
-        existingPrompt.setSafe(promptDto.isSafe());
 
         promptRepository.save(existingPrompt);
 
